@@ -6,12 +6,12 @@ const AllCollection = () => {
     <div id='collections' className='Collections'>
       <div className='side-bar'>
       
-      <h2>categories</h2>
-        <ul>
+      <h2>CATEGORIES</h2>
+        <ul className='side-bar-list'>
         
-          <li>Men</li>
-          <li>Women</li>
-          <li>Kids</li>
+          <input type='radio' /><li>Men</li>
+          <input type='radio'/><li>Women</li>
+          <input type='radio'/><li>Kids</li>
         </ul>
       
         

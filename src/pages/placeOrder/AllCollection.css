@@ -9,10 +9,26 @@
     
 }
 .side-bar{
-    width: 15%;
+    width: 25%;
     background-color: #f3e3f3;
     padding: 10px;
     display: flex;
     flex-direction: column;
     
+    
+}
+.side-bar-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width:100%;
+    list-style: none;
+    
+}
+.side-bar-list input li{
+    width: 100%;
+    padding: 10px;
+    border: box;
+    border-bottom: 1px solid #ccc;
 }
