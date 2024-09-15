@@ -1,0 +1,38 @@
+.home{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30vw;
+    padding:10px;
+    
+}
+.home__container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    
+}
+.home__container__img{
+    width:40%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__container__img img{
+    width:100%;
+    height:100%;
+   
+    
+}
+.home__container__text{
+    width:60%;
+    height: 100px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
