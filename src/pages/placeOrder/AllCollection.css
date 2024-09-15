@@ -1,4 +1,18 @@
-.collections{
+.Collections{
     width: 100%;
-    background-color:#7f8c8d
+    background-color:#e5e8e8;
+    display: flex;
+    margin-top:100px;
+    margin-bottom: 100px;
+   
+    
+    
+}
+.side-bar{
+    width: 15%;
+    background-color: #f3e3f3;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
 }

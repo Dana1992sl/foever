@@ -27,7 +27,7 @@ const Footer = () => {
       
     
     </div>
-    <hr/>
+    <hr className='hori'/>
       <p className='copyright'>�� 2024 Forever. All rights reserved.</p>  
     
     

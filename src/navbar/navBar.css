@@ -3,14 +3,13 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:10px 20px;
     background-color:#fff;
     box-shadow:0 2px 4px rgba(0,0,0,0.1);
-    position:fixed;
-    left:0;
+    margin-left:0;
     right:0;
     background-color:#f3e3f3;
     height:80px;
+    width:100%;
     
    
 }
