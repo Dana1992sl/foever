@@ -100,3 +100,12 @@
     background-color:#f3e3f3;
     color:black;
 }
+.search{
+    display:none;
+}
+.search-icon:hover{
+    .search{
+        display:flex;
+        transition:0.3s;
+    }
+}
