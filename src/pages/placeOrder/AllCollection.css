@@ -33,8 +33,9 @@
 }
 .side-bar-list input li{
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     border: box;
+    
 
     
     
@@ -124,4 +125,22 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media (max-width: 750px){
+    .Collections{
+        width: 100%;
+
+    }
+    .side-bar{
+       width:150px;
+       font-size:10px;
+    }
+    .collections-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .product-list{
+        display:flex;
+    }
 }

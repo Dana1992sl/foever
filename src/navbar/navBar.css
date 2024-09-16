@@ -69,24 +69,6 @@
     width:20px;
     display:none;
 }
-
-@media (max-width:750px){
-    .NavBar{
-        width:100%;
-
-    }
-    .navbar-list{
-        display:none;
-
-
-    }
-    .menu{
-        display:flex;
-        flex-direction:column;
-        width:100%;
-    }
-
-}
 .btn{
     width:100px;
     height:40px;
@@ -109,3 +91,40 @@
         transition:0.3s;
     }
 }
+.dropdown{
+    display:none;
+}
+
+@media (max-width:750px){
+    .NavBar{
+        width:100%;
+
+    }
+    .navbar-list{
+        display:none;
+
+
+    }
+    .menu{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+    .search{
+        display:none;
+    }
+    .search-icon:hover{
+        .search{
+            display:flex;
+            transition:0.3s;
+            width:50%;
+        }
+        
+
+}
+.dropdown{
+    display:flex;
+    width:10px;
+
+}}
+
