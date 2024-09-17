@@ -5,6 +5,8 @@ import Header from './components/header/header'
 import NavBar from './navbar/navBar'
 import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
+import Login from './pages/login/login'
+import Signup from './pages/login/Signup'
 import AllCollection from './pages/placeOrder/All Collection'
 
 
@@ -18,6 +20,8 @@ const App = () => {
     <Route path='/AllCollection' element={<AllCollection/>}/>
     <Route path='/About' element={<About/>}/>
     <Route path='/Contact' element={<Contact/>}/>
+    <Route path='/Login' element={<Login/>}/>
+    <Route path='/Signup' element={<Signup></Signup>}/>
     
     
     </Routes>

@@ -19,7 +19,7 @@ const NavBar = () => {
     <div className='search-icon'>
       <input type='text' className='search' placeholder='Search'></input>
       <img className='search-icon' src={assets.search_icon}/>
-      <button className='btn'>Sign in</button>
+      <Link to='login'><button className='btn' >Sign in</button></Link>
     </div> 
     </div>
   )
