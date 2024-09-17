@@ -2,7 +2,9 @@ import React from 'react'
 import { list, products } from '../../assets/assets'
 import './exploreMenu.css'
 
+
 const ExploreMenu = () => {
+  
   return (
     <div className='Collection'>
     <div className='Collection__container'>
@@ -12,12 +14,11 @@ const ExploreMenu = () => {
       </div>
       <div className='Collection-list'>
         {list.map((item,index) =>{
-          return(<div key={index} className='Collection__item'>
-            <img src={item.image}/>
+          return(<div  key={index} className='Collection__item'  >
+            <img  src={item.image}/>
             <p>{item.name}</p>
             <p>${item.price}</p>
-            <p>{item.new}</p>
-
+            
             
           </div>)
 

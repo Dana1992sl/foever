@@ -4,11 +4,8 @@ import './AllCollection.css';
 
 
 
-const AllCollection = () => {
-  const options =[
-    {value:"Sort by relevant",label:"Sort by relevant"},
-    {value:"Sort by Low to high",label:"Sort by Low to high"},
-    {value:"Sort by High to low",label:"Sort by High to low"},];
+const AllCollection = ({category,setcategory}) => {
+ 
 
   return (
     <div id='collections' className='Collections'>
@@ -45,11 +42,11 @@ const AllCollection = () => {
       <div className='collections-container'>
       <div className='product-list'>
         {products.map((item,index) =>{
-          return(<div key={index} className='Collection__item'>
-            <img src={item.image}/>
+          return(<div onClick={()=>setcategory(prev=>prev===item.name?"All":item.name)} key={index} className='Collection__item'>
+            <img className={category===item.name?"active":""} src={item.image}/>
             <p>{item.name}</p>
             <p>${item.price}</p>
-            <p>{item.new}</p>
+            
             </div>)
 
         })}
