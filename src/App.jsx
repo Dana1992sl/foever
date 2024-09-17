@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Footer from './components/footer/footer'
 import Header from './components/header/header'
 import NavBar from './navbar/navBar'
+import About from './pages/About/About'
 import AllCollection from './pages/placeOrder/All Collection'
 
 
@@ -14,6 +15,7 @@ const App = () => {
     <Routes>
     <Route path='/' element={<Header/>}/>
     <Route path='/AllCollection' element={<AllCollection/>}/>
+    <Route path='/About' element={<About/>}/>
     
     
     </Routes>
