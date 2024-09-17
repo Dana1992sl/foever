@@ -91,7 +91,7 @@
         transition:0.3s;
     }
 }
-.dropdown{
+.dropdown-icon{
     display:none;
 }
 
@@ -122,7 +122,7 @@
         
 
 }
-.dropdown{
+.dropdown-icon{
     display:flex;
     width:10px;
 
