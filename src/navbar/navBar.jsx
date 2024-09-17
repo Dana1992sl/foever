@@ -13,7 +13,7 @@ const NavBar = () => {
         <li><a href='/'>Home</a></li>
         <Link to='/AllCollection'><li><a href='#collections'>Collections</a></li></Link>
         <Link to='/About'><li><a href='#About'>About</a></li></Link>
-        <li><a href='#Contacts'>Contacts</a></li>
+        <Link to='/Contact'><li><a href='#Contacts'>Contacts</a></li></Link>
       </ul>
     
     <div className='search-icon'>
