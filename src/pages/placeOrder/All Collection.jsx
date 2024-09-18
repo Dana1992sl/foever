@@ -9,7 +9,18 @@ const AllCollection = ({category,setcategory}) => {
  
 
   return (
+    <>
+    <div className='select'>
+    <h1>All COLLECTION</h1>
+      <select value={category} onChange={(e) => setcategory(e.target.value)}>
+        <option value="">All Categories</option>
+        <option value="Sort By: Relevant">Sort By: Relevant</option>
+        <option value="Sort By: High to Low">Sort By: High to Low</option>
+        <option value="Sort By: Low to High">Sort By: Low to High</option>
+      </select>
+    </div>
     <div id='collections' className='Collections'>
+    
     
       <div className='side-bar'>
       <h1>FILTERS</h1>
@@ -55,6 +66,7 @@ const AllCollection = ({category,setcategory}) => {
       </div>
       </div>
     </div>
+    </>
   )
 }
 

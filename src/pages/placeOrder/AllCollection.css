@@ -144,3 +144,15 @@ hr{
         display:flex;
     }
 }
+.select{
+    display: flex;
+    height:40px;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-between;
+    gap:750px;
+    
+}
+.select h1{
+    width:100%;
+}
