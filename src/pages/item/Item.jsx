@@ -5,14 +5,16 @@ import './Item.css'
 
 const Item = () => {
   const size = ['S','M','L','XL','XXL']
+  
  
   return (
     <>
     <div className='item-container'>
     <div className="container">
-        {products.map((item,index)=>{
+        {products.map((item)=>{
+          
             return (
-                <div  className="item" key={index}>
+                <div  className="item" >
                     <img className='item-image' src={item.image} />
                     
                     <div className='item-info'>
@@ -28,6 +30,7 @@ const Item = () => {
                     <button className='sizes'>{size[3]}</button>
                     <button className='sizes'>{size[4]}</button>
                     </div>
+                  
                     <button className='btn-cart'>Add to Cart</button>
                     <hr className='horizontal'/>
                     <div className='info'>
@@ -35,12 +38,13 @@ const Item = () => {
                     <p>Cash on Delivery is available on this product</p>
                     <p>Easy return and exchange policy within 7 Days</p></div>
                     </div>
+                  
                     
                 </div>
                 
-            )
+            )}
             
-        })}
+        )}
         
     </div>
     

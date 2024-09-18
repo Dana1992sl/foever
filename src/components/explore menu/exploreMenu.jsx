@@ -3,7 +3,7 @@ import { list, products } from '../../assets/assets'
 import './exploreMenu.css'
 
 
-const ExploreMenu = () => {
+const ExploreMenu = ({image,setImage}) => {
   
   return (
     <div className='Collection'>
@@ -14,8 +14,8 @@ const ExploreMenu = () => {
       </div>
       <div className='Collection-list'>
         {list.map((item,index) =>{
-          return(<div  key={index} className='Collection__item'  >
-            <img  src={item.image}/>
+          return(<div onClick={()=>setImage(prev=>prev===item.image)}  key={index} className='Collection__item'  >
+            <img className={image===item.image}  src={item.image} />
             <p>{item.name}</p>
             <p>${item.price}</p>
             
