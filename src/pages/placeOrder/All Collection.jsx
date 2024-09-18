@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { products } from '../../assets/assets';
 import './AllCollection.css';
 
@@ -42,8 +43,8 @@ const AllCollection = ({category,setcategory}) => {
       <div className='collections-container'>
       <div className='product-list'>
         {products.map((item,index) =>{
-          return(<div onClick={()=>setcategory(prev=>prev===item.name?"All":item.name)} key={index} className='Collection__item'>
-            <img className={category===item.name?"active":""} src={item.image}/>
+          return(<div  key={index} className='Collection__item'>
+            <Link to='/Item'><img  src={item.image}/></Link>
             <p>{item.name}</p>
             <p>${item.price}</p>
             
