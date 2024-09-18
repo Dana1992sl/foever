@@ -60,6 +60,8 @@
     display:flex;
     align-items:center;
     padding:10px;
+    width:50px;
+    color:black;
 }
 .horizontal{
     color:#a7a6a4  ;
@@ -71,4 +73,10 @@
     font-size:16px;
     color:#bbbab0;
     
+}
+.buttons{
+    display:flex;
+    flex-direction:row;
+    padding:20px;
+    gap:10px;
 }
