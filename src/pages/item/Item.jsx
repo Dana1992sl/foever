@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { products } from '../../assets/assets'
 import './Item.css'
 
@@ -31,7 +32,7 @@ const Item = () => {
                     <button className='sizes'>{size[4]}</button>
                     </div>
                   
-                    <button className='btn-cart'>Add to Cart</button>
+                    <Link to='/Cart'><button className='btn-cart'>Add to Cart</button></Link>
                     <hr className='horizontal'/>
                     <div className='info'>
                     <p>100% Original Product</p>

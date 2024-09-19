@@ -4,6 +4,7 @@ import Footer from './components/footer/footer'
 import Header from './components/header/header'
 import NavBar from './navbar/navBar'
 import About from './pages/About/About'
+import Cart from './pages/cart/cart'
 import Contact from './pages/Contact/Contact'
 import Item from './pages/item/Item'
 import Login from './pages/login/login'
@@ -24,6 +25,7 @@ const App = () => {
     <Route path='/Login' element={<Login/>}/>
     <Route path='/Signup' element={<Signup></Signup>}/>
     <Route path='/Item' element={<Item/>}/>
+    <Route path='/Cart' element={<Cart/>}/>
     
     
     </Routes>

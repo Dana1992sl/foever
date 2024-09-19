@@ -94,6 +94,9 @@
 .dropdown-icon{
     display:none;
 }
+.cart-icon{
+    padding:10px;
+}
 
 @media (max-width:750px){
     .NavBar{
@@ -127,4 +130,5 @@
     width:10px;
 
 }}
+
 
