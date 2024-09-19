@@ -9,7 +9,7 @@
 }
 .payment{
     display: inline-block;
-    width: 100px;
+    width: 200px;
     height: 50px;
     padding:5px;
     align-items: center;
@@ -70,4 +70,26 @@
 .cart-item-total{
     width: 100%;
     padding: 10px;
+}
+.cart-bottom{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width:100%;
+    gap:20px;
+    padding:10px;
+}
+.cart-bottom-items{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width:-30%;
+    flex-direction:column;
+
+}
+.hori{
+    margin-top:10px;
+    height:1px;
+    background-color: #ccc;
+
 }
