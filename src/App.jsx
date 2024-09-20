@@ -9,6 +9,7 @@ import Contact from './pages/Contact/Contact'
 import Item from './pages/item/Item'
 import Login from './pages/login/login'
 import Signup from './pages/login/Signup'
+import Orders from './pages/Orders/Orders'
 import AllCollection from './pages/placeOrder/All Collection'
 
 
@@ -26,6 +27,7 @@ const App = () => {
     <Route path='/Signup' element={<Signup></Signup>}/>
     <Route path='/Item' element={<Item/>}/>
     <Route path='/Cart' element={<Cart/>}/>
+    <Route path='/Orders' element={<Orders/>}/>
     
     
     </Routes>

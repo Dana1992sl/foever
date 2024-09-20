@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { assets, products } from '../../assets/assets'
 import './cart.css'
 
@@ -43,7 +44,7 @@ const Cart = () => {
           <hr className='hori'/>
           <p>total</p>
           <hr className='hori'/>
-          <button className='payment'>Payment</button>
+          <Link to='/Orders'><button className='payment'>Payment</button></Link>
           
 
           </div>
