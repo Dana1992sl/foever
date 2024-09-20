@@ -72,11 +72,10 @@
     padding:5px;
 }
 .placeorder{
-    width:30%;
-    padding:10px;
-    BAckground-color:black;
+    width:200px;
+    padding:15px 40px;
     color:white;
-    border-radius:5px;
+    border-radius:12px;
     margin-top:20px;
     margin-left:350px;
     margin-bottom:20px;
@@ -84,6 +83,52 @@
     font-weight:bold;
     text-align:center;
     cursor:pointer;
+    z-index:0;
+    background-color:black;
+}
+.placeorder ::after{
+    content:"";
+    width:100%;
+    height:100%;
+    background-color:#333;
+    position:absolute;
+    top:0;
+    left:0;
+    border-radius:10px;
+    z-index:-1;
+}
+.placeorder ::before {
+    content:"";
+    width:calc(100% + 4px);
+    height:calc(100% + 4px);
+    background:linear-gradient(45deg, #FF0000, #FF7300,#FFFB00, #48FF00,#00FFF5, #0026FF, #7A00FF, #FF00C8, #FF0000);
+    position:absolute;
+    top:-2px;
+    left:-2px;
+    border-radius:10px;
+    z-index:-1;
+    background-size:600%;
+    filter:blur(8px);
+    transition:opacity 0.5s ease-in-out;
+    opacity:1;
+    animation:glowing 20s linear infinite;
+}
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+    
+}
+.placeorder:hover::before {
+    opacity:1;
+}
+.placeorder:active:after {
+    background:transparent;
+    
+}
+.placeorder:active {
+    color:#000;
+    font-weight:bold;
 }
 .stripelogo{
     display:flex;
