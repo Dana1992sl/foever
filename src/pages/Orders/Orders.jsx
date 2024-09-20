@@ -32,10 +32,12 @@ const Orders = () => {
           <div className='payment-method'> 
           <h1>PAYMENT METHOD</h1>
           <div className='payment-logo'>
-          <button className='stripelogo'><img src={assets.stripe_logo}/></button>
-          <button className='razorlogo'><img src={assets.razorpay_logo}></img></button>
-          <button className='paytmlogo'>Cash on Delivery</button>
+          <button className='stripelogo'><input type='checkbox' className='checkbox'/><img src={assets.stripe_logo}/></button>
+          <button className='razorlogo'><input type='checkbox' className='checkbox'/><img src={assets.razorpay_logo}></img></button>
+          <button className='paytmlogo'><input type='checkbox' className='checkbox'/>Cash on Delivery</button>
+          
           </div>
+          <button className='placeorder'>Place Order</button>
 
           </div>
 
