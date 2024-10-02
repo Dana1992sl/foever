@@ -26,6 +26,14 @@ const storeContextProvider =(props)=>{
   const removeFromCart =(itemId) => {
     setShopItems((prev) => ({ ...prev, [itemId]: prev[itemId]-1 }));}
 
+  const Toggle=document.querySelector('.cross-icon')
+  
+  const startToggle=document.querySelector('.menu-icon')
+
+  startToggle.addEventListener('click',()=>{
+    ul.classList.add('active');
+  })
+
 
   const contextValue ={
     products,

@@ -128,7 +128,7 @@ hr{
 }
 @media (max-width: 750px){
     .Collections{
-        width: 100%;
+        width: 80%;
 
     }
     .side-bar{
@@ -143,14 +143,21 @@ hr{
     .product-list{
         display:flex;
     }
+    .select{
+        width:80%;
+        align-items: center;
+        justify-content: center;
+        margin-right:40%;
+    }
 }
 .select{
     display: flex;
     height:40px;
     margin-top: 20px;
-    width: 100%;
-    justify-content: space-between;
     gap:750px;
+    position: flex-start;
+    width: 100%;
+    
     
 }
 .select h1{

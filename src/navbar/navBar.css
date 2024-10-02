@@ -97,6 +97,17 @@
 .cart-icon{
     padding:10px;
 }
+.menu-icon{
+    display:none;
+}
+.NavLink{
+    display:none;
+}
+.cross-icon{
+    display:none;
+}
+
+
 
 @media (max-width:750px){
     .NavBar{
@@ -104,23 +115,34 @@
 
     }
     .navbar-list{
-        display:none;
-
-
-    }
-    .menu{
         display:flex;
         flex-direction:column;
-        width:100%;
+        position:fixed;
+        top:0;
+        left:0;
+        background-color:#f3e3f3;
+        height:100%;
+        width:25%;
+        justify-content:center;
+        
     }
+    .navbar-list a{
+        display:flex;
+        
+    }
+    
+    
     .search{
         display:none;
+    }
+    .search-icon{
+        width:100%;
     }
     .search-icon:hover{
         .search{
             display:flex;
             transition:0.3s;
-            width:50%;
+            width:100%;
         }
         
 
@@ -129,6 +151,26 @@
     display:flex;
     width:10px;
 
-}}
+}
+.menu-icon {
+    width:40px;
+    display:flex;
 
+    
+}
+.menu-icon img {
+    width:20px;
+    cursor:pointer;
+}
+.cross-icon{
+    display:flex;
+    width:20px;
+    cursor:pointer;
+}
+
+
+
+    
+}
+ 
 
