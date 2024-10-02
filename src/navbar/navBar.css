@@ -106,24 +106,23 @@
 .cross-icon{
     display:none;
 }
+.nav-menu {
+    display:none;
+  }
+  .nav-items{
+    margin-right: 20px;
+  }
 
 
 
-@media (max-width:750px){
+
+@media screen and (max-width:750px){
     .NavBar{
         width:100%;
 
     }
     .navbar-list{
-        display:flex;
-        flex-direction:column;
-        position:fixed;
-        top:0;
-        left:0;
-        background-color:#f3e3f3;
-        height:100%;
-        width:25%;
-        justify-content:center;
+        display:none;
         
     }
     .navbar-list a{
@@ -154,7 +153,7 @@
 }
 .menu-icon {
     width:40px;
-    display:flex;
+    display:block;
 
     
 }
@@ -167,7 +166,33 @@
     width:20px;
     cursor:pointer;
 }
+.Sidebar-list{
+    display:none;
+}
+.nav-menu.active{
+    display: flex;
+    left: 0;
+    opacity: 1;
+}
+.nav-menu {
+    display: none; /* Hide menu by default in mobile */
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    background-color: #efd5dc;
+    justify-content:center;
+    align-items:center;
+    list-style: none;
 
+  }
+  .nav-items{
+    margin: 40px 0;
+  }
 
 
     

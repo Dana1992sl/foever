@@ -34,6 +34,18 @@ const storeContextProvider =(props)=>{
     ul.classList.add('active');
   })
 
+  const showSidebar=()=>{
+    const sidebar=document.querySelector('.Sidebar');
+    sidebar.style.display="flex";
+
+    
+    
+}
+const closeSidebar=()=>{
+    const sidebar=document.querySelector('.Sidebar');
+    sidebar.style.display="none";
+}
+
 
   const contextValue ={
     products,
@@ -42,7 +54,10 @@ const storeContextProvider =(props)=>{
     setProducts,
     getTotalCartAmount,
     addToCart,
-    removeFromCart
+    removeFromCart,
+    showSidebar,
+    closeSidebar
+    
   }
   return (<storeContext.Provider value={contextValue}>
   {props.children}
